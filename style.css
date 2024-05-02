@@ -1,0 +1,481 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background: skyblue;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 28px;
+    color: red;
+    font-weight: 600;
+}
+
+.top-tools {
+    display: flex;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.top-tools ul {
+    display: flex;
+    width: 500px;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.top-tools ul li {
+    display: flex;
+    font-size: 20px;
+}
+
+.top-tools ul li a {
+    text-decoration: none;
+}
+
+.top-tools ul li a:focus,
+.top-tools ul li a:link {
+    color: black;
+}
+
+.banner-section {
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+
+.banner-img-section {
+    width: 100%;
+    height: 100vh;
+    overflow: none;
+}
+
+
+.buttons-prev-next-icon {
+    position: relative;
+    top:20vh;
+    left: -1100px;
+    display: flex;
+}
+
+.buttons-prev-next-icon button {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 30px;
+    border: none;
+    background: none;
+    justify-content: space-between;
+}
+
+.buttons-prev-next-icon .prev {
+    font-size: 20px;
+    left: 5%;
+}
+
+.buttons-prev-next-icon .next {
+    font-size: 20px;
+}
+
+.left-right {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    height: 100vh;
+    background: lightblue;
+    overflow: none;
+    justify-content: space-between;
+}
+
+.img-left {
+    position: relative;
+    display: flex;
+    top:50px;
+    left:30px;
+}
+
+.hero-image {
+    width: 400px;
+    height: 70vh;
+}
+
+.form-right {
+    position: relative;
+    top:40px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 85vh;
+    right: 50px;
+    box-shadow: 1px 1px 1px 1px;
+}
+.label {
+    position: relative;
+    top:15px;
+    font-size: 18px;
+    line-height: 1.1;
+    width: 120px;
+    left:20px;
+}
+
+
+.input {
+    position: relative;
+    top:-10px;
+    left: 160px;
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    outline: none;
+    font-size: 18px;
+}
+
+textarea {
+    margin-top:10px;
+    width: 440px;
+    height: 20vh;
+    font-size: 18px;
+    position: relative;
+    left: 20px;
+}
+
+.submit {
+    top:1%;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    left: 40%;
+}
+
+.portfolio .section-portfolio {
+    height: 100vh;
+    width: 100%;
+}
+
+.portfolio-main {
+    position: relative;
+    top:150px;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    left: 40px;
+    justify-content: space-evenly;
+}
+
+.portfolio-img  img{
+    width: 350px;
+    height: 280px;
+}
+
+.text-portfolio {
+    visibility: visible;
+    line-height: 1.9;
+}
+
+.text-portfolio h3 {
+    font-size: 24px;
+}
+
+.text-portfolio p{
+    font-size: 18px;
+}
+
+.footer-section {
+    position: relative;
+    display: flex;
+    height: 40vh;
+    width: 90%;
+    position: relative;
+    top:50vh;
+    justify-content: space-between;
+    margin: 50px;
+    margin-right: 0px;
+}
+
+.social-link-left {
+    margin-left: 20px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    bottom: 50px;
+    position: relative;
+}
+
+.menu-contact {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+}
+.menu-contact ul {
+list-style-type: none;
+height: 50px;
+}
+
+.menu-contact ul li {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.menu-contact ul li a {
+    text-decoration: none;
+    color: black;
+} 
+
+
+/* all media screen working */
+
+@media screen and (max-width:1280px) {
+    .header-section {
+        width: 100%;
+        overflow: hidden;
+    }
+    .top-tools {
+        margin-right: -20px;
+    }
+    .banner-section {
+        width: 100%;
+        overflow:hidden;
+    }
+    .banner-img-section {
+        width: 100%;
+    }
+    .buttons-prev-next-icon{
+        text-align: center;
+    }
+    .form-right {
+        height: 65vh;
+    }
+    .form-right h3 {
+        padding-top: 10px;
+    }
+    .left-right {
+        position: relative;
+        top:100px;
+        width: 90%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .label {
+        position: relative;
+        top:8px;
+    }
+    .input {
+        position: relative;
+        top:-18px;
+    }
+    
+    textarea {
+       margin-top: 0;
+       height: 80px;
+    }
+    
+    .submit {
+        position: relative;
+        top:1%;
+    }
+
+    .portfolio .section-portfolio{
+        width: 100%;
+    }
+    .portfolio-main {
+        width: auto;
+    }
+    .footer-section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header-section {
+        width: 100%;
+        overflow: hidden;
+    }
+    .top-tools {
+        margin-right: -20px;
+    }
+    .banner-section {
+        width: 100%;
+        overflow:hidden;
+    }
+    .banner-img-section {
+        width: 100%;
+    }
+    .buttons-prev-next-icon{
+        position: relative;
+        left: -90%;
+    }
+    .img-left img {
+        height: 60vh;
+    }
+    .form-right {
+        position: relative;
+        top:20px;
+        height: 60vh;
+        width: 440px;
+        row-gap: 10px;
+    }
+    .left-right {
+        position: relative;
+        top:50px;
+        width: 90%;
+        height: 70vh;
+    }
+    .label {
+        position: relative;
+        top:15px;
+        font-size: 18px;
+        line-height: 1.1;
+        width: 100px;
+        left:20px;
+    }
+    
+    
+    .input {
+        position: relative;
+        top:-18px;
+        left: 160px;
+        width: 250px;
+        height: 35px;
+        font-size: 14px;
+        outline: none;
+    }
+    
+    textarea {
+        width: 400px;
+        height: 15vh;
+        font-size: 16px;
+    }
+    
+    .submit {
+        top:1%;
+        width: 120px;
+        height: 35px;
+        cursor: pointer;
+        left: 40%;
+    }
+
+    .portfolio .section-portfolio{
+        position: relative;
+        top:-120px;
+        width: 100%;
+    }
+    .portfolio-main {
+        position: relative;
+        top:-10px;
+        width: auto;
+    }
+    .footer-section {
+        position: relative;
+        top: -80px;
+        width: 90%;
+    }
+}
+@media screen and (max-width:990px) {
+    .header-section {
+        width: 100%;
+        overflow: hidden;
+    }
+    .top-tools {
+        margin-right: -20px;
+    }
+    .banner-section {
+        width: 100%;
+        overflow:hidden;
+    }
+    .banner-img-section {
+        width: 100%;
+    }
+    .buttons-prev-next-icon{
+        position: relative;
+        left: -90%;
+    }
+    .img-left img {
+        height: 60vh;
+    }
+    .form-right {
+        position: relative;
+        top:20px;
+        height: 60vh;
+        width: 440px;
+        row-gap: 10px;
+    }
+    .left-right {
+        position: relative;
+        top:-60px;
+        width: 90%;
+        height: 70vh;
+    }
+    .label {
+        position: relative;
+        top:15px;
+        font-size: 18px;
+        line-height: 1.1;
+        width: 100px;
+        left:20px;
+    }
+    
+    
+    .input {
+        position: relative;
+        top:-18px;
+        left: 160px;
+        width: 250px;
+        height: 35px;
+        font-size: 14px;
+        outline: none;
+    }
+    
+    textarea {
+        width: 400px;
+        height: 15vh;
+        font-size: 16px;
+    }
+    
+    .submit {
+        top:1%;
+        width: 120px;
+        height: 35px;
+        cursor: pointer;
+        left: 40%;
+    }
+
+    .portfolio .section-portfolio{
+        position: relative;
+        top:-150px;
+        width: 100%;
+    }
+    .portfolio-main {
+        position: relative;
+        top:-30px;
+        width: auto;
+    }
+    .footer-section {
+        position: relative;
+        top: -50px;
+        width: 90%;
+        height: 20vh;
+    }
+}
